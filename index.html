@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="content">
+        <div class="picture">
+            <div class="logo">
+                <img src="Assets/odin-lined.png" alt="Odin Logo" class="odin-head">
+                <h1 class="odin">Odin</h1>
+            </div>
+            <div id="photocredit">Photo By Ingmar on <a class="photocredit-link" href="https://unsplash.com/photos/a-bunch-of-rocks-that-are-laying-on-the-ground-rxhho1yO2Vw" target="_blank">Unsplash</a></div>
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="form-text">
+            <p>This is not a real online service!</p>
+            <p>Sign up <em>now</em> to get started.</p>
+            <p class="special-test">You <em>know</em> you want to.</p>
+        </div>
+        <form action="#">
+            <section id="form-1" class="form-section">
+                <h3>Let's Do this!</h3>
+                <div id="form-flex">
+                    <div class="item">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" required>
+                    </div>
+                        
+                    <div class="item">
+                        <label class="item" for="lastName">Last Name</label>
+                        <input type="text" id="lastName" required>
+                    </div>
+    
+                    <div class="item">
+                        <label class="item" for="user-email">Email</label>
+                        <input type="email" id="user-email" required>
+                    </div>
+    
+                    <div class="item">
+                        <label class="item" for="phone">Phone</label>
+                        <input type="tel" id="phone" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="123-456-7890" required> 
+                        <br><span id="num-msg" class="error-msg"></span>
+                    </div>
+    
+                    <div class="item">
+                        <label class="item" for="password">Password</label>
+                        <input type="password" id="password" required >
+                    </div>
+    
+                    <div class="item">
+                        <label class="item" for="check-password">Confirm Password</label>
+                        <input type="password" id="check-password" required>
+                        <br><span id="msg" class="error-msg"></span>
+                    </div>       
+                        
+                </div>
+            </section>
+    
+            <section id="submit-section" class="form-section">
+                <button id="submit-btn" type="submit">CREATE ACCOUNT</button>
+                <br><br>
+                <p>Already have an account?<a href="#" class="login">Log In</a></p>
+                <div id="footer">Created by <a class="footer-link" href="https://github.com/koreanjohn" target="_blank">John Lucken <i class="fab fa-github"></i></a></div>
+            </section>
+        </form>
+    </div>
+</body>
+</html>
